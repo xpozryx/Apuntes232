@@ -1,3 +1,23 @@
 ##############################################################################
-Actualizacion de Escritorio
+26/02/2023
 
+|||||||||||||||||||||||||||||||||||||||||||||||
+Compiladores
+Tarea: Investigar gerarquia de Chomsky
+Leer libro el entorno de programacion unix (Cap 8)
+Leer libro el compiladores principios técnicas y herramientas alfred V 
+|||||||||||||||||||||||||||||||||||||||||||||||
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+Algoritmos
+Libro de Cromen
+Pelicula TSP
+Problemas de permutaciones, Problemas de combinaciones, Problema del agente viajero, Problema de la 
+asigacion cuadratica(Quadratic assignmet problem)
+|||||||||||||||||||||||||||||||||||||||||||||||
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+Proyectos
+Expocicion un tema por clase.
+Temas 3 y 8.
+|||||||||||||||||||||||||||||||||||||||||||||||
