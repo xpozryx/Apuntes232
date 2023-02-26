@@ -1,0 +1,82 @@
+#########################################################################################
+22/02/2023
+
+Indique el numero de veces que se ejecuta la instruccion a <- a+b
+en cada uno de los siguientes pseudocodigos
+
+Algoritmo 1
+	for i <- 1 to n
+		a <- a+b
+
+La instruccion se ejecuta n veces
+La instruccion se ejecuta n+1 veces
+
+Algoritmo 2
+	for i <- 1 to n do		n+1
+		for j <- 1 to n do	n(n+1)
+			a <- a+b		n^2
+
+La instruccion se ejecuta n^2+1
+
+
+Algoritmo 3
+	for i <- 1 to n do			n+1
+		for j <- 1 to n do		n(n+1)
+			for k <- 1 to n do	n^2(n+1)
+				if a < b then 	n^2
+					a <- a+b
+
+La instruccion se ejectua 
+
+Cosnidere un arreglo con ndiferentes numeros enteros positivos, disene 
+un pseudocodigo para cada caso
+
+1) Encontrar el valor minimo
+Input: L[] enteros positivos 
+Output: Valor minimo
+
+	min <- L[1]
+	for i <- 2 to n do
+		if min > L[i]
+			min < - L[i]
+
+	return min
+
+Mejor caso: Esfuerzo computacional sean las minimas (O)
+Peor caso: (o)
+Mejor caso: (omega)
+
+Ecuaciones que dependen de si mismas son las ecuaciones recurrentes
+
+Tarea: Programar Ejerccio 3
+
+#########################################################################################
+22/02/2023
+
+Libro de Cromen
+Pelicula TSP
+
+Problemas de permutaciones, Problemas de combinaciones, Problema del agente viajero, Problema de la 
+asigacion cuadratica(Quadratic assignmet problem)
+
+NP: No polinomial
+
+Tecnicas de analisis de algoritmos
+	Un algritmo debe considerar los siguientes aspectos
+		Definir entrada y salida
+		No debe ser ambiguo
+		Debe ser efectivo, debe completarce en un timepo finito
+		Debe contemplar todos los casos de entrada 
+		Cada caso debe tener una solucion unica
+
+
+Un determinado problema puede ser resuelto por distintos algoritmos
+
+Analisis apriori
+El comportamiento de un algoritmo puede variar notablemente para diferentes conjuntos de entrada
+
+	Peor Caso: El mayor tiempo que puede tardar un algoritmo en ejecutarce (O)
+	Mejor caso: El menor tiempo que puede tardar un algoritmo en ejecutarce (o)
+	Caso Promedios (Omega)
+
+#########################################################################################

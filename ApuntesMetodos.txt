@@ -1,0 +1,35 @@
+#########################################################################################
+22/02/2023
+
+Modelo: Abtraccion simplificada de la realidad
+
+Tipo de Modelo(DEpende del area de conocimiento que se analice)
+	Graficos
+	Iconicos
+	Matematicos
+	Probabilisticos
+	etc...
+
+P.L(L.P): Programacion Lineal
+P.N.L(N.L.P): Programacion No Lineal
+P.P.L: Problemas de Programacion Lineal(Generalmente los P.P.L buscan maximizar ganancias
+y minimizar problemas)
+
+Sistema Lineal: Grado 1 (Potencia de todas las variables) cumple con las propiedades de adicion, proporcionalidad, divisibilidad, etc...
+s.a: sujeto a
+Z: Generalmente se denomina a la funcion objetivo(F.O) con esta letra puede ser mayuscula o minuscula
+Restriccion: ES una inecuacion que determina el area factible de un sistema lineal
+Area factible o convexa: Son las posibles soluciones que tiene el sistema lineal o no lineal. Esta delimitada por las restricciones del sistema
+Area convexa: ES aquella formada por las restricciones de un sistema. Se identifica porque eligiendo un punto al azar sobre su perimetro se puede alcanzar cualquier otro punto del mismo en linea recta de la misma, sin salir del area factible
+	Convexa: Tiene solucion
+	NO Convexa: NO Tiene solucion
+
+Z= a1x1+a2x2+...+anxn
+
+Ejemplo:
+SE encuentran las intersecciiones con las x
+r1: 4x+y <= 30
+r2: 6x+8y => 45
+r3: x => 0
+
+#########################################################################################

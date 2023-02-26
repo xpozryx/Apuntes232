@@ -1,0 +1,91 @@
+########################################################################################################################################
+21/02/2023
+
+Lenguaje: Notacion 
+
+Compilador: Programa
+
+Que hace un compilador?
+	Se le ingresa un programa escrito en lenguaje fuente
+	Sale un programa en lenguaje objeto
+	Y el programa de lenguaje fuente debe ser equivalente en lenguaje objeto
+
+Tiene 2 partes
+	Analisis
+
+	Sintesis
+
+El unico lenguaje que entienden las maquinas es el lenguaje maquina
+Hay 2 tipos de lenguaje
+	Lenguaje de alto nivel
+
+	Lenguaje de bajo nivel
+
+Componente lexico(Token)
+	Conjunto de caracteres con significado colectivo
+
+Analisis Lexico	
+	Separa la cadena de entrada en tokens(Componente Lexico, Terminal)
+
+Analisador Sintactico
+	Analisa que los token venga en el orden correcto
+	Construye el arbol de analisis sintactico
+	Verifica si la cadena de entrada corresponde al elemento generado por la gramatica
+Arbol de analisis sintactico
+	Identifica que los tokens vengan en el orden correcto
+Arbol de analisis semantico
+	Detectar que los operandos de una operacion sean compatibles
+	Conversion de Tipos
+
+Generacion de codigo Intermedio
+	Facil de generar
+	Tipos de codigo intermedio
+		Codigo de 3 direcciones
+			max 3 operandos y 2 operadores
+
+########################################################################################################################################
+22/02/2023
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+Tarea: Investigar gerarquia de Chomsky
+|||||||||||||||||||||||||||||||||||||||||||||||
+
+Leer libro el entorno de programacion unix (Cap 8)
+Leer libro el compiladores principios técnicas y herramientas alfred V
+
+Generacion de codigo intermedio
+Hay tres tipos 
+	Codigo de 3 direcciones
+		Max 3 operandos y 2 operadores
+	Codigo postfijo
+	Arboles Sintacticos
+
+Optimizacion
+	Realizar una tarea con la menor cantidad de recursos
+
+CPU
+	ALU
+	U.C
+	AX	AH/AL
+	PC
+
+Gramatica libre de contexto
+	Conjunto de Tokens
+	Conjunto de NO terminales
+	Conjunto de producciones
+		Tiene lado Izquierdo y un lado derecho
+		Una regla de sustitucion
+		No terminal -> Cadena de simbolos gramaticales(No terminal o un token)
+		No terminal: Ya no pueden ser sustituidos
+	La denominacion de uno de los no terminales como simbolo inicial	
+
+Arbol de Ana Sintactico(A.A.S)
+	Un A.A.S es un arbol con las siguientes 4 propiedades:
+	1) La Raiz se etiqueta como el simbolo inicial
+	2) Cada hoja esta etiquetada con un token o con E(Cadena Vacia)
+		Los nodos hoja no tienen hijos
+	3) Cada nodo interior esta etiquetado como un no terminal
+		Los nodos internos tienen al menos un hijo
+
+
+########################################################################################################################################

@@ -1,0 +1,36 @@
+#########################################################################################
+21/02/2023
+
+Entrega de trabajo teams
+Cada trabajo que se suba se usa este formato:
+NOmbre del Archivo/Asunto del correo
+
+Grupo NumeroDeACtividadNombre
+Ejemplo
+3CV12T1PozosReyesLuisAngel
+
+Tipos DE ACtividades
+	Tareas = T
+	Parcticas = P
+	Actividad en clase = AC
+	Laboratorio = L
+
+3 Fuentes y si copiamos algo se referencia en IEEE
+
+Referencias
+	[1]
+	[2] 
+
+Lab los Jueves Sistemas 3
+
+Evaluacion
+	1er y 2do parcial
+		Parcticas 				50
+		Evaluacion continua		30
+		Examen					20
+	3er 
+		Proyecto 				60
+		Practicas				25
+		Evalucion Continua		15
+
+#########################################################################################
