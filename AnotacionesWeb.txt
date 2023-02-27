@@ -3,13 +3,13 @@
 
 Entrega de trabajo teams
 Cada trabajo que se suba se usa este formato:
-NOmbre del Archivo/Asunto del correo
+Nombre del Archivo/Asunto del correo
 
 Grupo NumeroDeACtividadNombre
 Ejemplo
 3CV12T1PozosReyesLuisAngel
 
-Tipos DE ACtividades
+Tipos De Actividades
 	Tareas = T
 	Parcticas = P
 	Actividad en clase = AC
@@ -34,3 +34,11 @@ Evaluacion
 		Evalucion Continua		15
 
 #########################################################################################
+27/02/2023
+
+La Web es el conjunto de paginas que alojan la informacion
+JEE Java Enterprise Edition
+
+
+#########################################################################################
+

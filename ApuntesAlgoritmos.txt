@@ -80,3 +80,74 @@ El comportamiento de un algoritmo puede variar notablemente para diferentes conj
 	Caso Promedios (Omega)
 
 #########################################################################################
+27/02/2023
+Que es un algoritmo?
+	Conjunto de pasos finitos para resolver un problema, no debe ser ambiguo
+	Debe resolver todos los posibles casos de entrada y debe dar un resultado (determinista)
+
+Porque es importante el analisis de los algoritmos?
+	Evita reinventar soluciones
+	Buscar la eficiencia ya sea en tiempo y memoria de un algoritmo.
+	Conocer las estrategias algoritmicas
+
+Cuales son los tipos de analisis?
+	Apriori
+		Analisis teorico en dondde se analisa de forma general los pasos que sigue el algoritmo
+		y la complejidad de este en todos sus casos(Mejor, peor, promedio)
+
+	Posteriori
+		Analisis practico que considera las caracteristicas de la computadora, lenguajes de 
+		programacion y sus tiempos
+
+Que estrategias existen para disenar un algoritmo?
+	Fuerza Bruta
+	
+	Recursividad
+
+	Voraces/(Greedy)
+
+	Programacion dinamica(buttom up/top down)
+
+	Divide y venceras
+
+	Probabilistas
+
+Que clases de problemas se resuelven los algoritmos?
+	P(Polinomial)
+		Se resuelven en un tiempo polinomial
+
+	NP
+
+	NP-Completos
+
+	NP-duros
+
+Que es notacion asintotica?
+	Funcion que acota al tiempos
+
+	Cota superior asisntotica (Notacion O mayuscula)
+
+	Cota inferior asisnotica (Notacion Omega)
+
+	Teta
+		Cumple las dos realciones O y Omega
+
+	Las cotas se estudian desde un punto X0
+
+Orden de Complejidad
+
+	Orden Constante O(1)
+	
+	Orden Logaritmica O(Log n)
+
+	Orden Lineal O(n)
+
+	Orden Cuadratica O(n^2)
+
+	Orden Polinomial O(n^a a>2)
+
+	Orden exponencial O(a^n a>2)
+
+	Orden Factorial O(n!)
+
+#########################################################################################

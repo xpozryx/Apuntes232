@@ -1,0 +1,75 @@
+##############################################################################
+27/02/2023
+
+Equipo 11 1.5, 1.5.4
+
+1.5
+Retos
+
+1.5.1
+Heterogenidad
+El internet permite a los usuarios accesar a servicios y correr aplcaciones en un acoleccion heterogenea
+de computadoras y redes., La Heterogenidad aplica para los siguientes
+	Redes
+	Hardware
+	Sistemas Operativos
+	Lenguajes de programacion
+	Implementaciones
+
+1.5.2
+Openness
+La Openness de un sistema computacional es una caracteristica que determina si el sistema se puede extender y re implementar 
+en varios aspectos
+Primariamente se determina por el grado al cual un nuevo servicio de compartir recursos pueda ser anadido y estar disponible para 
+una variedad de programas de cliente
+
+Esta no se puede obtener a menos que las especificaciones y documentaciones del sistema esten disponibles para los 
+desarrolladores
+
+	Sistemas abiertos estan caracterizados por el hecho que sus interfaces clave estan publicadas
+
+	Sistemas abiertos distribuidos estan basados en la provicion de un mecanismo de comunicacion uniforme
+	y interfaces publicas para acceder a el recurso compartido
+
+	Sistemas abiertos y distribuidos pueden ser construidos de hardware y software heterogeneo, posiblemente de diferentes vendedores.
+	Pero cada uno de los componentes que se publican para ser un estandar deben estar cuidadosamente probados y verificados para
+	el correcto funcionamiento el sistema
+
+1.5.3(Seguridad)
+Security
+	La informacion de los recursos que se han habilitado y distribuido tienen un valor intrinseco
+	para sus usuarios, debido a estos la seguridad es muy importante
+	La seguridad para recursos informativos tiene 3 componentes
+		Confidencialidad
+		
+		Integridad
+		
+		Disponibilidad
+
+	En sistemas distribuidos los clientes mandan request para poder acceder a datos administrados por servidores
+	en los cuales la mayoria de datos contienen informacion sensible, por esto uno de los retos es mandar esta informacion de
+	una manera segura.
+	El segundo reto es identificar el usuario remoto o el agente correcto
+
+	Pero, los siguientes dos retos de seguridad no han sido corregidos.
+
+		Denial of service attacks
+
+		SEcurity of mobile code
+
+
+
+1.5.4
+Scalability(Escalabilidad)
+	Un sistema se describe como escalable si este se mantiene efectivo cuando hay un aumento significativo en el numero de recursos y en el numero de usuarios.
+
+	Diseno de Sistemas distribuidos escalables
+		Controlar el costo de los recursos fisicos
+
+		Controlar la perdida de performance
+
+		Preevenir el agotamiento de los recursos de sistema
+
+		Evitar cuellos de botella en el performance
+
+##############################################################################
