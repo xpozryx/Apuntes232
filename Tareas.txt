@@ -3,7 +3,7 @@
 
 |||||||||||||||||||||||||||||||||||||||||||||||
 Compiladores
-Tarea: Investigar gerarquia de Chomsky
+Tarea: Investigar gerarquia de Chomsky																	Hecho
 Leer libro el entorno de programacion unix (Cap 8)
 Leer libro el compiladores principios técnicas y herramientas alfred V 
 |||||||||||||||||||||||||||||||||||||||||||||||
@@ -41,3 +41,10 @@ Infografia en equipo
 
 |||||||||||||||||||||||||||||||||||||||||||||||
 ##############################################################################
+28/02/2023
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+WEB
+
+Instalar Java EE
+|||||||||||||||||||||||||||||||||||||||||||||||

@@ -89,3 +89,25 @@ Arbol de Ana Sintactico(A.A.S)
 
 
 ########################################################################################################################################
+28/02/2023
+
+Token: Simbolos Gramaticales
+
+Simbolo Gramatical: Un token o un no terminal 
+
+Una Gramatica no ambigua es cuando un arbol solo se craga hacia un lado
+
+Gramatica ambigua
+	Una gramatica es ambigua si existe una cadena que pertenece al lenguaje generado por la gramatica
+	para el cual se pueden dibujar A.A.S diferentes
+
+	cade -> cade+cade|cade-cade|0|1|2|3|4|5|6|7|8|9
+
+Asociatividad de operadores
+	Dependiendo hacia que lado se carga el arbol sabremos que asociasion se esta usando 
+	Asociasion Izquierda, Derecha
+
+
+El numero de hijos depende de la cantidad de simbolos de lado derecho
+########################################################################################################################################
+
