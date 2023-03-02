@@ -80,6 +80,7 @@ Gramatica libre de contexto
 	La denominacion de uno de los no terminales como simbolo inicial	
 
 Arbol de Ana Sintactico(A.A.S)
+	Se etiqueta con simbolos gramaticales
 	Un A.A.S es un arbol con las siguientes 4 propiedades:
 	1) La Raiz se etiqueta como el simbolo inicial
 	2) Cada hoja esta etiquetada con un token o con E(Cadena Vacia)
@@ -109,5 +110,60 @@ Asociatividad de operadores
 
 
 El numero de hijos depende de la cantidad de simbolos de lado derecho
-########################################################################################################################################
 
+########################################################################################################################################
+01/03/2023
+
+Precedencia
+
+Asosiatividas de suma resta mult y div es hacia la izquierda
+Asignacion tiene asosiatividad derecha
+
+En la notacion postfija se ponen primero los operandos y leugo el operador
+Postfijo
+
+	Si E es una variable
+
+	Si E es una expresion de la forma (E1), entonces la notacion postfija de E1 es la notacion postfija de E
+	(En la notacion postfija no hacen falta parentecis)
+
+	Ejemplo
+	5+9*2 -> 592+*
+
+Traduccion dirigida por la sintaxis
+
+	Definicion
+		Asocia a cada simbolo gramatical de un conjunto de atributos y a cada produccion se le asocia un conjunto de reglas
+		semanticas para calcular los valores de los atributos asociados coon los ismbolos gramaticales que aparecen en esa produccion.
+
+	A.A.S con anotaciones(Arbol decorado)
+		Es el A.A.S donde en cada nodo se mustran lo svalores de los atributos
+		Si un nodo n esta etiquetado con el simbolo X entonces se puede escribir X.a para indicar el valor del atributo a
+		de X en el nodo n
+
+		Atributo Sintetizado
+			Es aquel atributo cuyo valor del nodo del A.A.S se determina a partir de los valores de los atributos de los 
+			hijos de ese nodo
+
+		D.D.S = GLC+Reglas Semanticas
+				Gramatica libre de contexto + Reglas Semanticas
+
+Producciones 		Reglas Semanticas
+
+exp -> exp+ter 		exp.t
+exp -> exp-ter
+exp -> ter
+ter -> 0
+ter -> 1
+ter -> 2
+.
+.
+.
+ter -> 9
+
+Para este ejemplo la notacion infija es el lenguaje fuente y el lenguaje objeto es la notacion postfija
+Paso 1: Dibujar arbol de analisis sintactico
+Paso 2: Decorar arbol de analisis sintactico(Poner los valores de los atributos asociados con los nodos del arbol sintactico)
+Paso 3: Buscar la traduccion en la raiz 
+
+########################################################################################################################################

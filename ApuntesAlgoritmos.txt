@@ -151,3 +151,80 @@ Orden de Complejidad
 	Orden Factorial O(n!)
 
 #########################################################################################
+01/03/2023
+
+Algoritmos de ordenamiento
+
+Algoritmo 1
+
+ALgoritmo Bubble sort
+Input: Lista de valores esnteros a ordenar
+Output: Lista ordenada
+
+Begin
+	n <- length(L)						
+	repeat
+		swapped <- False				n
+		for i <- 1 to n 				n(n+1)
+			if (L[i-1] > L[i]) then 
+				swap(L[i-1], L[i])
+				swapped <- True
+
+		n <- n-1
+	until not swapped
+return L
+
+Para obtener la complejidad del arlgoritmo se suman los tiempo de ejecucion de cada lineas
+
+1+1+n+n(n+1)+3n^2+2n+1 
+El tiempo en terminos de n para este algoritmo es 3+4n+4n^2
+
+O(n) = k(n^2)
+
+Algoritmo 2
+
+Insertion sort
+Input: L(lista desordenada)
+Output: L (Ordenada)
+
+Begin 
+	n <- lenght(L) 							1
+	for i <- 2 to n do 						n
+		j <- 1								n-1
+		while j => and L[j] > L[j+1] do 	n-1
+			swap (L[j], L[j+1]) 			
+			j <- j+1
+
+return L
+
+Tabulacion
+
+i 		j
+
+2		1, 2... n
+3		2, 3... n
+4		3, 4... n
+.		,
+n-1 	n-2, n-1, n
+n 		n-1, n
+
+
+
+Algorutmo 3
+
+Merge Sort
+Input: L(lista desordenada), p(Indice), r(indice) 
+Output: L (Ordenada)
+
+Begin
+	MergeSort(L, p, r)
+	if(p < r) then
+		q <- [|(p+r)/2|x]
+		MergeSort(L, p, q)
+		MergeSort(L, q+1, r)
+		Merge(L, p, q, r)
+
+return L
+
+
+#########################################################################################
