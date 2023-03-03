@@ -226,5 +226,27 @@ Begin
 
 return L
 
+#########################################################################################
+02/03/2023
+
+GNUplot
+pyplot
+
+Concluciones: Explicacion de los algoritmos y su rapidez y si tubimos problemas en la ejecucion, que paso con los experimentos
+
+time.h
+
+se debe calcular desde el codigo sys
+
+arreglo pero mejor, peor y promedio deben de ser la misma
+
+Tiempo a usar
+
+init time();
+bubble();
+finish time();
+
+finish - init y la resta es el termino que documentamos
+
 
 #########################################################################################

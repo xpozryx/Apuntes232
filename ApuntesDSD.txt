@@ -55,7 +55,7 @@ Security
 
 		Denial of service attacks
 
-		SEcurity of mobile code
+		Security of mobile code
 
 
 

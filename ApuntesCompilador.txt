@@ -130,11 +130,11 @@ Postfijo
 	Ejemplo
 	5+9*2 -> 592+*
 
-Traduccion dirigida por la sintaxis
+Traduccion dirigida por la sintaxis(Sirve para traducir) 
 
 	Definicion
 		Asocia a cada simbolo gramatical de un conjunto de atributos y a cada produccion se le asocia un conjunto de reglas
-		semanticas para calcular los valores de los atributos asociados coon los ismbolos gramaticales que aparecen en esa produccion.
+		semanticas para calcular los valores de los atributos asociados coon los simbolos gramaticales que aparecen en esa produccion.
 
 	A.A.S con anotaciones(Arbol decorado)
 		Es el A.A.S donde en cada nodo se mustran lo svalores de los atributos
@@ -165,5 +165,51 @@ Para este ejemplo la notacion infija es el lenguaje fuente y el lenguaje objeto 
 Paso 1: Dibujar arbol de analisis sintactico
 Paso 2: Decorar arbol de analisis sintactico(Poner los valores de los atributos asociados con los nodos del arbol sintactico)
 Paso 3: Buscar la traduccion en la raiz 
+
+########################################################################################################################################
+03/03/2023
+
+Recorrido en profundidad
+
+void visita(Nodo n){
+	for(cada nodo m hijo de n de izquierda a derecha){
+		visita(m)
+	}
+	evalua las reglas semanticas en el nodo n
+
+}
+
+Esquema de traduccion
+
+Es una GLC en las que se encuentran interacalo en los lados derechos de las prds
+fragmentos del programa llamados acciones semanticas
+
+	Esq. Trad. = GLC + acciones semanticas
+
+Preorden: R,I,D
+Inorden: I,R,D
+Postorden: I,D,R
+
+Accion semantica: Fragmento del programa del lado derecho de una produccion
+
+Hijos putativos -> Acciones semanticas
+
+Los arboles multicamino(No binarios) se recorren en aplitud o profundidad
+
+	1. Dibujar al A.A.S
+	2. Colgar al A.A.S las acciones semanticas
+	3. Recorrer en profundidad el arbol(SE ejecutan las acciones semanticas)
+
+Analisis sintactico Descendente
+	Se construye desde la raiz y se desplaza hacia las hojas(nodo que no tiene hijos)
+
+Analisis sintactico Descendente predictivo recursivo
+	Conjunto de procedimientos par analisar la entrada que podrian ser recursivos
+
+	Por cada no terminal debe haber un procedimiento
+
+	Se usan los nombres de los no terminales para nombrar las funciones
+
+	
 
 ########################################################################################################################################

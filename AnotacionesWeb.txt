@@ -47,3 +47,44 @@ JEE Java Enterprise Edition
 En sistemas distribuidos exiten 2 elementos, procesos y peticiones
 
 Diapositiva de multi-capas
+
+#########################################################################################
+02/03/2023
+
+Lado de cliente
+
+	Se ejecutan en el navegador
+	Pagina HTML o Java applet
+
+	Se ejecutan Desktop
+	Aplicacion de Java
+
+Lado de Servidor
+	JSP
+	Servlet
+	XML
+	Servicio Web
+
+Lado del servidor del negocio
+	EJB
+	Servidor Web
+
+Componentes JEE
+
+	Aplicaciones cliente y applets.
+
+	Servlets y JavaServer
+
+	Enterprise JavaBeans
+
+	Datos
+
+Paginas Web dinamca: Se puede modificar la informacion que tiene.
+
+Contenedores Java EE
+
+	Es una interfaz en la que un componente y el sistema de menor nivel de la soporte al componente.
+
+Tipo de Contenedores
+
+	Servidor Java EE
