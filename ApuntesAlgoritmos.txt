@@ -250,3 +250,65 @@ finish - init y la resta es el termino que documentamos
 
 
 #########################################################################################
+06/03/2023
+
+Analisis de algoritmos recursivos
+
+Cuando un algoritmo tiene llamadas a si mismo, el tiempo de ejecucion puede calcularse con la relacion de recurrencia
+Esta relacion se define con una ecuacion que define la secuencia recursiva, es decir una funcion en terminos de
+si misma.
+
+La tecnica "Divide y venceras" es un ejemplo comun que emplea algoritmos recursivos e involucra los siguientes 3 pasos
+
+	1. Dividir el problema en varios sub problemas
+	2. Resuelve recurcivamente cada sub problema
+	3. Combina las soluciones para resolver el problema original
+
+Ecuacion de recurrencia generalizada
+
+		|O(1) 	si n<=k
+T(n)=	|
+		|aT(n/b)+D(n)+C(n) otor caso
+
+Donde O(1) valor constante del caso base
+a: el numero de llamadas ecursivas
+b: el factor por el que se divide el problema
+D(n): Tiempo que requiere dividir el problema
+C(n): Tiempo para combinar la solucion
+
+Para resolver una ecuacion de recurrencia se debe determinar una forma explicita para el termino
+general aT(n/b), es decir una forma recursiva de n.
+Los metodos que se estudiaran son:
+	Metodo de sustitucion 
+	teorema Maestro
+
+
+Metodo por sustitucion
+
+Ejemplo:p Consideremos el caso de MergeSort
+
+		|O(1) 	si n=1 
+T(n)=	|
+		|2T(n/2)+n
+
+Resolviendo recurrencia
+
+T(n) = 	2T(n/2) + n 		J = 1
+		2(2T(n/4)+n/2)+n 	j = 2
+
+[7][5][1][8][2][9][6][3]
+
+[7][5][1][8] | [2][9][6][3]
+
+[7][5] | [1][8] | [2][9] | [6][3]
+
+[7] | [5] | [1] | [8] | [2] | [9] | [6] | [3]	Caso base debido a que n = 1
+
+[5][7] | [1][8] | [2][9] | [3][6]
+
+[1][5][7][8] | [2][3][6][9]
+
+[1][2][3][5][6][7][8][9]
+
+
+#########################################################################################

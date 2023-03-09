@@ -198,18 +198,97 @@ Los arboles multicamino(No binarios) se recorren en aplitud o profundidad
 
 	1. Dibujar al A.A.S
 	2. Colgar al A.A.S las acciones semanticas
-	3. Recorrer en profundidad el arbol(SE ejecutan las acciones semanticas)
+	3. Recorrer en profundidad el arbol(Se ejecutan las acciones semanticas)
 
 Analisis sintactico Descendente
 	Se construye desde la raiz y se desplaza hacia las hojas(nodo que no tiene hijos)
 
 Analisis sintactico Descendente predictivo recursivo
-	Conjunto de procedimientos par analisar la entrada que podrian ser recursivos
+	Conjunto de procedimientos que podrian ser recursivos para analisar la entrada 
 
 	Por cada no terminal debe haber un procedimiento
 
 	Se usan los nombres de los no terminales para nombrar las funciones
 
-	
 
 ########################################################################################################################################
+07/03/2023
+
+Las producciones de la gramatica nos dicen en que orden deben venir los tokens
+
+Conjunto Primero(alfa) (Cadena de simbolos gramaticales)
+	Es un conjunto de tokens que opere como los primeros simbolos de una o mas cadenas generadas apartir de alfa
+	Se pone el primer token de cada cadena
+
+Las cadenas que pertenecen al lenguaje generado por una gramatica son tokens
+	  
+	  alfa
+PRIM(simple)={integer, char, num}
+PRIM(^id)={^}
+PRIM(array[simple] of tipo)={array}
+
+Analisis sintactico desendente recursivo predictivo
+	El analisis sintactico es predictivo si uno puede escojer el lado derecho de la produccion
+	basandose en el token actual
+
+	A -> ab
+	A -> a
+	PRIM(ab) = {a}
+	PRIM(a) = {a}
+
+	PRIM(ab) n PRIM(a) = {a}
+
+	Si se intercectan los lados derechos primeros deb dar vacio para que sea predictivo
+
+s -> (s)
+s -> a
+
+void s(){
+	if(preana == '(' ){
+
+	}
+}
+
+El arbol de llamadas es igual al arbol sintactico
+siempre se construye aunque sea de forma implicita
+
+Recursividad por la izquierda
+	El primer simbolo gramatical izquierdo se encuentra en el extremo izquiedo de lado derecho
+
+########################################################################################################################################
+08/03/2023
+
+Para los if nos basamos en 
+
+Recursividad por la izquierda
+	exp -> exp + ter
+	void exp(){
+		exp()	Se hace un bucle infinito debido a que su recursividad es izquierda
+	}
+
+Gramaticas equivalentes
+	Se dice que dos gramaticas son equivalentes si generan el mismo lenguaje
+
+A -> Ac | B
+
+
+
+A -> BR | cR
+R -> cR | E(Vacio)
+
+YACC -> Bison 	Gramaticas 	Generador de Analisadores SIntacticos
+
+Seccion de declaracion
+%%
+Seccion de reglas 	ESquema de Traduccion
+%%
+Seccion de codigo soporte
+
+Lex -> flex		Expreciones Regulares	
+
+Proyecto: Un compilador o un interprete(mini compilador)
+
+
+
+########################################################################################################################################
+

@@ -77,14 +77,33 @@ Componentes JEE
 
 	Enterprise JavaBeans
 
-	Datos
 
 Paginas Web dinamca: Se puede modificar la informacion que tiene.
 
 Contenedores Java EE
 
-	Es una interfaz en la que un componente y el sistema de menor nivel de la soporte al componente.
+	Es una interfaz en la que un componente y el sistema de menor nivel que da soporte al componente.
 
 Tipo de Contenedores
 
 	Servidor Java EE
+
+	Contenedor Web
+		Servlets / JSP(Componentes)
+
+	Contenedor EJB (De negocio)
+		EJB
+
+	Contenedor de aplicacion
+#########################################################################################
+07/03/2023
+
+Los servlets, los jsp y los ejb son componentes de java EE
+JDBC
+
+hci
+
+Servidores de aplicaciones
+	Proporciona un entorno en el que se pueden ejecutar las aplicaciones
+
+APache TomCat es un contenedor de servlets

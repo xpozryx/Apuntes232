@@ -73,3 +73,47 @@ Scalability(Escalabilidad)
 		Evitar cuellos de botella en el performance
 
 ##############################################################################
+09/03/2023
+
+
+SINCRONIZACIÓN DEL RELOJ
+En un sistema centralizado, el tiempo no es ambiguo. Cuando un proceso quiere saber la hora, rea-
+liza una llamada de sistema y el núcleo se la dice
+
+Relojes Fisicos
+
+	A pesar del amplio uso de la palabra “reloj” para hacer referencia a estos dispositivos, en realidad no son relojes en el sentido usual. Tal vez cronómetro sea una mejor palabra con la cual designarlos.
+
+	Un cronómetro de computadora, en general, es un cristal de cuarzo mecanizado con precisión. Cuando este dispositivo se mantiene sujeto a tensión, los cristales de cuarzo oscilan en una frecuencia bien definida que depende del tipo de cristal, de la forma de su corte, y de la cantidad de tensión. Hay dos registros asociados con cada cristal, un contador y un registro de mantenedor. Cada oscilación del
+	cristal disminuye el contador en uno. Cuando el contador llega a cero, se genera una interrupción y el contador se reinicia a partir del registro de mantenedor.
+
+	La mayoría de las computadoras tiene una pila especial que respalda la RAM CMOS de tal
+	modo que no es necesario introducir la fecha ni la hora en inicios posteriores.
+
+	Aunque la frecuencia con la que oscila un cristal es en general bastante estable, resul-
+	ta imposible garantizar que los cristales de las diferentes computadores funcionen exactamente con
+	la misma frecuencia.
+
+	cuando un sistema tiene n computadoras, los n cristales funcionarán a velocidades ligeramente diferentes, lo cual ocasiona que los relojes (software) se salgan gradualmente de sincronía y arrojen diferentes valores cuando se leen. Esta diferencia en valores se conoce como distorsión de reloj.
+
+	Debido a que hay 24 horas en un día, cada una con 3 600 segundos, el segundo solar se exactamente como 1/86 400 de un día solar.
+
+	definieron al segundo como el tiempo que necesita el átomo de cesio 133 para efectuar exactamente 9192631770 transiciones.
+
+	El BIH promedia estas marcas para producir el Tiempo Atómico Internacional, lo cual se abrevia como TAI.
+	Así, el TAI es exactamente el número medio de marcas de los relojes de cesio 133, desde la medianoche del 1 de enero de 1958 (el comienzo del tiempo), dividido entre 9 192 631 770.
+
+	hay un serio problema con él; 86 400 segundos TAI son ahora apro-
+	ximadamente 3 ms menos que un día medio solar (debido a que el día medio solar se está volviendo
+	más largo todo el tiempo). Utilizar el TAI para contar el tiempo significaría que a través del curso
+	de los años, el mediodía llegaría más y y más temprano
+
+	El BIH resuelve el problema introduciendo segundos vacíos siempre que la discrepancia entre el TAI y el tiempo solar alcanza los 800 ms.
+
+	Esta corrección da lugar a un sistema de tiempo basado en segundos TAI constantes, pero que permanecen en fase con el movimiento aparente del Sol. A este sistema se le denomina Tiempo Universal Coordinado y se abrevia como UTC (por sus siglas en inglés). El UTC es la base de todo conteo de tiempo civil moderno; prácticamente ha reemplazado el viejo estándar, Tiempo Medio de Greenwich, que es el tiempo astronómico.
+
+	La mayoría de las empresas de energía eléctrica sincronizan el tiempo de sus relojes de 60 o 50 Hz
+	con el UTC, por lo que cuando el BIH anuncia un segundo vacío, estas empresas elevan su frecuen-
+	cia a 61 o 51 Hz por 60 o 50 segundos para adelantar todos los relojes de su área de distribución.
+
+##############################################################################
